@@ -3,33 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>แสดงข้อมูลฉลากยา</title>
+  <title>VisMedS - ค้นหาข้อมูลฉลากยา</title>
   <style>
     body {
       font-family: sans-serif;
-      background-color: #f9f9f9;
+      background-color: #e8f5e9;
       padding: 20px;
-      font-size: 18px;
+      font-size: 20px;
+      color: #004d40;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    header img {
+      width: 60px;
     }
     input {
       width: 100%;
-      padding: 10px;
-      margin-bottom: 20px;
-      font-size: 18px;
+      padding: 12px;
+      font-size: 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
     }
     .card {
-      background: rgb(255, 255, 255);
+      background: white;
       padding: 15px;
-      margin-bottom: 10px;
+      margin-top: 15px;
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       cursor: pointer;
     }
+    .card:hover {
+      background-color: #f1f8e9;
+    }
+    img.drug {
+      width: 100px;
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
-  <h1>ค้นหาข้อมูลฉลากยา</h1>
-  <input type="text" id="searchInput" placeholder="พิมพ์ชื่อยา...">
+  <header>
+    <img src="images/logo.png" alt="VisMedS">
+    <h1>VisMedS - ค้นหาข้อมูลฉลากยา</h1>
+  </header>
+
+  <input type="text" id="searchInput" placeholder="พิมพ์ชื่อยา เช่น พารา, ธาตุ, ท้องเสีย...">
   <div id="medicineList"></div>
 
   <script src="script.js"></script>

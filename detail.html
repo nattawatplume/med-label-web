@@ -3,22 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>รายละเอียดของยา</title>
+  <title>VisMedS - รายละเอียดของยา</title>
   <style>
     body {
       font-family: sans-serif;
       padding: 20px;
-      background: #fff7f0;
-      font-size: 18px;
+      background: #f1f8e9;
+      font-size: 20px;
+      color: #004d40;
     }
-    img {
-      width: 250px;
+    header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
       margin-bottom: 20px;
+    }
+    header img {
+      width: 60px;
+    }
+    a.back-home {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: green;
+      text-decoration: none;
+      border: 1px solid green;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    img#image {
+      width: 250px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+    p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+    strong {
+      color: #2e7d32;
     }
   </style>
 </head>
 <body>
-  <h1 id="name">ชื่อยา</h1>
+
+  <header>
+    <img src="images/logo.png" alt="VisMedS">
+    <h1>VisMedS - รายละเอียดของยา</h1>
+  </header>
+
+  <a href="index.html" class="back-home">← กลับหน้าหลัก</a>
+
+  <h2 id="name">ชื่อยา</h2>
   <img id="image" src="" alt="ยา">
   <p><strong>สรรพคุณ:</strong> <span id="usage"></span></p>
   <p><strong>วิธีใช้:</strong> <span id="howto"></span></p>
@@ -45,4 +82,3 @@
   </script>
 </body>
 </html>
-
