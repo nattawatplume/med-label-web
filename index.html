@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>แสดงข้อมูลฉลากยา</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+      font-size: 18px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+    .card {
+      background: rgb(255, 255, 255);
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>ค้นหาข้อมูลฉลากยา</h1>
+  <input type="text" id="searchInput" placeholder="พิมพ์ชื่อยา...">
+  <div id="medicineList"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

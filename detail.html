@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>รายละเอียดของยา</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background: #fff7f0;
+      font-size: 18px;
+    }
+    img {
+      width: 250px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="name">ชื่อยา</h1>
+  <img id="image" src="" alt="ยา">
+  <p><strong>สรรพคุณ:</strong> <span id="usage"></span></p>
+  <p><strong>วิธีใช้:</strong> <span id="howto"></span></p>
+  <p><strong>คำเตือน:</strong> <span id="warning"></span></p>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get('name');
+
+    fetch('medicines.json')
+      .then(res => res.json())
+      .then(data => {
+        const med = data.find(item => item.name === name);
+        if (med) {
+          document.getElementById('name').innerText = med.name;
+          document.getElementById('image').src = med.image;
+          document.getElementById('usage').innerText = med.usage;
+          document.getElementById('howto').innerText = med.howto;
+          document.getElementById('warning').innerText = med.warning;
+        } else {
+          document.body.innerHTML = '<p>ไม่พบข้อมูลยา</p>';
+        }
+      });
+  </script>
+</body>
+</html>
+
