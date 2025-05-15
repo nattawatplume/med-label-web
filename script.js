@@ -11,11 +11,11 @@ fetch('medicines.json')
         card.className = 'card';
         card.innerHTML = `
           <strong>${med.name}</strong><br>
-          <img src="${med.image}" alt="รูปยา" width="100"><br>
+          <img src="${med.image}" alt="รูปยา" class="drug"><br>
           ${med.usage}
         `;
         card.onclick = () => {
-          window.location.href = `detail.html?name=${encodeURIComponent(med.name)}`;
+          window.location.href = `detail.html?name=${med.name}`;
         };
         list.appendChild(card);
       });
