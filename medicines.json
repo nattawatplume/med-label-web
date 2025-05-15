@@ -74,7 +74,7 @@
     "usage": "ช่วยให้นอนหลับ เหมาะสำหรับผู้ที่นอนไม่หลับ",
     "howto": "รับประทานก่อนนอน 30 นาที",
     "warning": "ไม่ควรใช้ในเด็กและหญิงตั้งครรภ์",
-    "image": "images/sleep.PNG"
+    "image": "images/sleep.jpg"
   },
   {
     "name": "joint-pain-relief (ยาทาแก้ปวดข้อ)",
@@ -179,7 +179,7 @@
         "usage": "เสริมสร้างกระดูกและฟัน ป้องกันกระดูกพรุน",
         "howto": "รับประทานวันละ 1 เม็ดหลังอาหาร",
         "warning": "ไม่ควรใช้ร่วมกับยาที่มีธาตุเหล็ก",
-        "image": "images/calcium.png"
+        "image": "images/calcium.jpg"
     },
     {
         "name": "constipation(ยาระบาย)",
